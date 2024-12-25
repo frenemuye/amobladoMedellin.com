@@ -30,6 +30,12 @@ p {
     margin-bottom: 20px;
 }
 
+#galeria .container .row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -121,4 +127,11 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #galeria .container .row {
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
