@@ -36,6 +36,18 @@ p {
     margin-top: 30px;
 }
 
+#galeria .container .row h5{
+    font-size: 18px;
+    margin: 8px 15px;
+    color: #007bff;
+    text-align: center;
+}
+
+#galeria .container .row p{
+    font-size: 16px;
+    padding: 0px 15px;
+
+}
 .cta-button {
     display: inline-flex;
     align-items: center;
