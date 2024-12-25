@@ -115,7 +115,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy; 2024 <a href="https://suamoblado.com">AmobladosMedellin.com</a> | Todos los derechos reservados.
+            <p>&copy; <span id="currentYear"></span> <a href="https://suamoblado.com">AmobladoMedellin.com</a> | Todos los derechos reservados.
             </p>
             <p>
                 <!-- Default Statcounter code for 3.AmobladoMedellin.com http://www.amobladomedellin.com/ -->
@@ -146,6 +146,14 @@
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     </a>
 
+    <script>
+        // Obtén el año actual
+        const currentYear = new Date().getFullYear();
+    
+        // Inserta el año en el elemento con id "currentYear"
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
+    
 </body>
 
 </html>
