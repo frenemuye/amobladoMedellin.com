@@ -150,11 +150,17 @@
     <script>
         // Obtén el año actual
         const currentYear = new Date().getFullYear();
-    
         // Inserta el año en el elemento con id "currentYear"
         document.getElementById('currentYear').textContent = currentYear;
-    </script>
     
+
+        
+        // Redirigir a la versión sin www si es necesario
+        if (window.location.hostname.startsWith("www.")) {
+          window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
+        }
+      </script>
+      
 </body>
 
 </html>
