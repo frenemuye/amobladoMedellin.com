@@ -108,6 +108,33 @@
         .tarjeta-zona:hover .btn-zona {
             background: #0056b3;
         }
+
+        /* Estilos para el botón de ir arriba */
+        .scroll-top-button {
+            position: fixed;
+            bottom: 90px; /* Posicionado exactamente encima del de WhatsApp */
+            right: 27px; /* Alineación horizontal con el botón de WhatsApp */
+            width: 50px;
+            height: 50px;
+            background-color: #25d366; /* Mismo color verde de WhatsApp */
+            color: #ffffff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 32px; /* Tamaño de la flecha ajustado para visibilidad */
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            text-decoration: none;
+            display: flex;
+            align-items: center; /* Alineación vertical central del carácter */
+            justify-content: center; /* Alineación horizontal central del carácter */
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+        }
+        /* Efecto hover simulando el comportamiento de los botones flotantes */
+        .scroll-top-button:hover {
+            background-color: #128c7e;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
@@ -117,7 +144,7 @@
     </header>
 
     <div class="container">
-        <p>Ofrecemos apartamentos completamente amoblados en las mejores zonas de Medellín. Ideal para estadías de negocios, turismo o largas temporadas. Disfruta de comodidad, seguridad y las mejores tarifas.</p>
+        <p>Ofrecemos apartamentos completamente amoblados en las mejores zones de Medellín. Ideal para estadías de negocios, turismo o largas temporadas. Disfruta de comodidad, seguridad y las mejores tarifas.</p>
         <p>Contáctanos por WhatsApp para más información o reservas.</p>
 
         <!-- Botón de WhatsApp -->
@@ -203,6 +230,11 @@
         </div>
     </footer>
 
+    <!-- Botón flotante para subir al principio con flecha hacia arriba -->
+    <a href="#" class="scroll-top-button" id="btnScrollTop" title="Volver arriba">
+        &uarr; <!-- Entidad HTML que representa una flecha hacia arriba (↑) -->
+    </a>
+
     <!-- Botón flotante de WhatsApp -->
     <a href="https://api.whatsapp.com/send?phone=573117450745&text=Hola,%20estoy%20interesado%20en%20los%20apartamentos%20amoblados." class="whatsapp-button" target="_blank" title="Contáctanos por WhatsApp">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
@@ -223,6 +255,15 @@
                 document.getElementById('iframeApartamentos').style.height = event.data.height + 'px';
             }
         }, false);
+
+        // Control del comportamiento del botón de ir arriba de forma nativa
+        document.getElementById('btnScrollTop').addEventListener('click', function(e) {
+            e.preventDefault(); // Evita el comportamiento por defecto del enlace
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Desplazamiento suave nativo del navegador
+            });
+        });
     </script>
 </body>
 
