@@ -213,5 +213,9 @@ footer p { margin: 4px 0; }
   header { padding: 56px 16px 44px; }
   .grid-zonas { grid-template-columns: 1fr; }
   .seccion-zonas { padding: 44px 16px; }
-  #galeria { padding: 40px 16px; }
+
+  /* Iframe de borde a borde en mobile — elimina doble padding lateral */
+  #galeria { padding: 40px 0; }
+  #galeria .container { padding: 0; }
+  #contenedorIframe { border-radius: 0; }
 }
