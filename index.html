@@ -9,13 +9,14 @@
     <meta name="author" content="Amoblados Medellín">
     <meta property="og:title" content="Apartamentos Amoblados en Medellín - Reserva Fácil y Rápida">
     <meta property="og:description" content="Disfruta de apartamentos completamente equipados en Medellín. Ideales para turismo, negocios y largas estadías. ¡Haz tu reserva en pocos clics!">
-    <meta property="og:image" content="https://amobladomedellin.com/assets/img/og-image.jpg">
+    <meta property="og:image" content="https://amobladomedellin.com/assets/img/1.jpg">
     <meta property="og:url" content="https://amobladomedellin.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Apartamentos Amoblados en Medellín - Comodidad y Ubicación">
     <meta name="twitter:description" content="Apartamentos amoblados con excelente ubicación en Medellín. Disfruta de estadías confortables con todas las comodidades. Reserva ahora.">
-    <meta name="twitter:image" content="https://amobladomedellin.com/assets/img/og-image.jpg">
+    <meta name="twitter:image" content="https://amobladomedellin.com/assets/img/1.jpg">
 
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -24,139 +25,66 @@
     <title>Apartamentos Amoblados en Medellín - Comodidad y Ubicación Perfecta</title>
     <link rel="canonical" href="https://amobladomedellin.com">
     <link rel="icon" href="assets/img/icono.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
     
     <style>
-        /* Estilos base e integración del iframe */
-        #contenedorIframe {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-        #iframeApartamentos {
-            width: 1px;
-            min-width: 100%;
-            border: none;
-            display: block;
-        }
-
-        /* DISEÑO MEJORADO PARA LAS TARJETAS DE ZONAS DE INTERÉS */
-        .seccion-zonas {
-            padding: 50px 0;
-        }
-        .grid-zonas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            padding: 20px 0;
-        }
-        .tarjeta-zona {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #eef2f5;
-        }
-        /* Efecto al pasar el mouse */
-        .tarjeta-zona:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
-        .tarjeta-zona img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        .tarjeta-zona:hover img {
-            transform: scale(1.03);
-        }
-        .contenido-zona {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-        .contenido-zona h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.3rem;
-            color: #2c3e50;
-            font-weight: 700;
-        }
-        .contenido-zona p {
-            margin: 0 0 20px 0;
-            font-size: 0.95rem;
-            color: #5a6c7d;
-            line-height: 1.5;
-            flex-grow: 1;
-        }
-        .btn-zona {
-            display: inline-block;
-            text-align: center;
-            background: #007bff;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background 0.2s ease;
-        }
-        .tarjeta-zona:hover .btn-zona {
-            background: #0056b3;
-        }
-
-        /* Estilos para el botón de ir arriba */
-        .scroll-top-button {
-            position: fixed;
-            bottom: 90px; /* Posicionado exactamente encima del de WhatsApp */
-            right: 27px; /* Alineación horizontal con el botón de WhatsApp */
-            width: 50px;
-            height: 50px;
-            background-color: #25d366; /* Mismo color verde de WhatsApp */
-            color: #ffffff;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 32px; /* Tamaño de la flecha ajustado para visibilidad */
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            text-decoration: none;
-            display: flex;
-            align-items: center; /* Alineación vertical central del carácter */
-            justify-content: center; /* Alineación horizontal central del carácter */
-            transition: background-color 0.3s, transform 0.3s;
-            cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
-        }
-        /* Efecto hover simulando el comportamiento de los botones flotantes */
-        .scroll-top-button:hover {
-            background-color: #128c7e;
-            transform: scale(1.05);
-        }
+        /* Estilos adicionales manejados por assets/style.css */
     </style>
+    <link rel="alternate" hreflang="es-CO" href="https://amobladomedellin.com">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Apartamentos Amoblados Medellín — AmobladoMedellin.com",
+      "description": "Apartamentos completamente amoblados en Medellín. Ideales para turismo, negocios y estadías largas con comodidad y seguridad.",
+      "url": "https://amobladomedellin.com",
+      "telephone": "+573117450745",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Medellín",
+        "addressRegion": "Antioquia",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.2442,
+        "longitude": -75.5812
+      },
+      "sameAs": [
+        "https://suamoblado.com",
+        "https://www.facebook.com/apartamentosamobladomedellin",
+        "https://www.instagram.com/suamoblado_com/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+573117450745",
+        "contactType": "reservations",
+        "availableLanguage": "Spanish"
+      }
+    }
+    </script>
 </head>
 
 <body>
     <header>
-        <h1 style="text-align: center;">Apartamentos Amoblados Medellín</h1>
+        <span class="hero-badge"><i class="fas fa-building"></i> Medellín &amp; Área Metropolitana</span>
+        <h1>Apartamentos Amoblados Medellín</h1>
+        <p class="hero-sub">Estadías confortables para turismo, negocios y largas temporadas.<br>Comodidad, seguridad y las mejores tarifas.</p>
+        <a href="https://wa.me/573117450745?text=Hola,%20estoy%20interesado%20en%20los%20apartamentos%20amoblados%20en%20Medell%C3%ADn." class="hero-cta" target="_blank">
+            <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+        </a>
     </header>
 
     <div class="container">
-        <p>Ofrecemos apartamentos completamente amoblados en las mejores zones de Medellín. Ideal para estadías de negocios, turismo o largas temporadas. Disfruta de comodidad, seguridad y las mejores tarifas.</p>
-        <p>Contáctanos por WhatsApp para más información o reservas.</p>
-
-        <!-- Botón de WhatsApp -->
-        <a href="https://wa.me/573117450745?text=Hola,%20estoy%20interesado%20en%20los%20apartamentos%20amoblados%20en%20Medell%C3%ADn." class="cta-button" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            Contáctanos por WhatsApp
-        </a>
 
         <!-- Catálogo de apartamentos dinámico -->
-        <section id="galeria" class="py-2 bg-light">
+        <section id="galeria">
             <div class="container">
-                <h2 class="text-center mb-4">Catálogo de apartamentos</h2>
+                <span class="section-label"><i class="fas fa-home"></i> Disponibilidad en tiempo real</span>
+                <h2>Catálogo de apartamentos</h2>
                 <div id="contenedorIframe">
                     <iframe 
                         id="iframeApartamentos"
@@ -170,9 +98,12 @@
             </div>
         </section>
 
-        <!-- Zonas de interés mejoradas arquitectónicamente -->
-        <section class="seccion-zonas" style="border: #cfcfcf 1px solid;">
-            <h2 class="text-center mb-0 mt-0">Zonas de interés en Medellín</h2>
+        <!-- Zonas de interés -->
+        <section class="seccion-zonas">
+            <div class="container">
+            <span class="section-label"><i class="fas fa-map-marker-alt"></i> Turismo &amp; Cultura</span>
+            <h2>Zonas de interés en Medellín</h2>
+            <p class="section-desc">Explora los lugares más emblemáticos de la ciudad, a pocos minutos de nuestros apartamentos.</p>
             <div class="grid-zonas">
                 
                 <!-- Tarjeta 1: Plaza Botero -->
@@ -206,6 +137,7 @@
                 </div>
 
             </div>
+            </div>
         </section>
     </div>
 
@@ -219,25 +151,20 @@
             </p>
             <p>
                 Visitas:
-                <script type="text/javascript">
-                    var sc_project = 11459639;
-                    var sc_invisible = 0;
-                    var sc_security = "81c2aa2c";
-                    var scJsHost = "https://";
-                    document.write("<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>");
-                </script>
+                <script>var sc_project=11459639,sc_invisible=0,sc_security="81c2aa2c";</script>
+                <script async src="https://statcounter.com/counter/counter.js"></script>
             </p>
         </div>
     </footer>
 
-    <!-- Botón flotante para subir al principio con flecha hacia arriba -->
+    <!-- Botón flotante ir arriba -->
     <a href="#" class="scroll-top-button" id="btnScrollTop" title="Volver arriba">
-        &uarr; <!-- Entidad HTML que representa una flecha hacia arriba (↑) -->
+        <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Botón flotante de WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=573117450745&text=Hola,%20estoy%20interesado%20en%20los%20apartamentos%20amoblados." class="whatsapp-button" target="_blank" title="Contáctanos por WhatsApp">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=573117450745&text=Hola,%20estoy%20interesado%20en%20los%20apartamentos%20amoblados." class="whatsapp-button" target="_blank" rel="noopener noreferrer" title="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
@@ -251,7 +178,7 @@
 
         // Ajuste automático de altura por mensajería
         window.addEventListener('message', function(event) {
-            if (event.data.height) {
+            if (event.data && event.data.type === 'suamoblado-resize') {
                 document.getElementById('iframeApartamentos').style.height = event.data.height + 'px';
             }
         }, false);
